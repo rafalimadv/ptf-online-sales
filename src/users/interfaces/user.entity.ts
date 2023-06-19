@@ -19,4 +19,13 @@ export class UserEntity {
 
   @Column({ name: 'phone' })
   phone: string;
+
+  @Column({ name: 'type_user' })
+  typeUser: number;
+
+  @Column({ name: 'created_at' })
+  createdAt: Date;
+
+  @Column({ name: 'updated_at' })
+  updatedAt: Date;
 }
