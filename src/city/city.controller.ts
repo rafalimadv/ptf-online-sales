@@ -1,4 +1,5 @@
 import { Controller, Get, Param } from '@nestjs/common';
+
 import { CityEntity } from './entities/city.entity';
 import { CityService } from './city.service';
 
@@ -13,7 +14,7 @@ export class CityController {
 
   @Get('/:stateId')
   async getAllCitiesByStateId(
-    @Param('stateID') stateId: number,
+    @Param('stateId') stateId: number,
   ): Promise<CityEntity[]> {
     return this.cityService.getAllCitiesByStateId(stateId);
   }
