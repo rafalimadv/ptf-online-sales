@@ -9,8 +9,7 @@ import {
 } from '@nestjs/common';
 import { CreateUserDto } from './dtos/createUser.dto';
 import { UsersService } from './users.service';
-import { ReturnUserDTO } from './dtos/returnUser.dto';
-import { UserEntity } from './entities/user.entity';
+import { ReturnUserDto } from './dtos/returnUser.dto';
 
 @Controller('users')
 export class UsersController {
@@ -23,15 +22,15 @@ export class UsersController {
   }
 
   @Get()
-  async getAllUsers(): Promise<ReturnUserDTO[]> {
+  async getAllUsers(): Promise<ReturnUserDto[]> {
     return (await this.usersService.getAllUsers()).map(
-      (userEntity) => new ReturnUserDTO(userEntity),
+      (userEntity) => new ReturnUserDto(userEntity),
     );
   }
 
   @Get('/:userId')
-  async getUserById(@Param('userId') userId: number): Promise<ReturnUserDTO> {
-    return new ReturnUserDTO(
+  async getUserById(@Param('userId') userId: number): Promise<ReturnUserDto> {
+    return new ReturnUserDto(
       await this.usersService.getUserByIdUsingRelations(userId),
     );
   }
