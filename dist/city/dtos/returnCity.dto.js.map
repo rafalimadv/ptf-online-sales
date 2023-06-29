@@ -1,0 +1,1 @@
+{"version":3,"file":"returnCity.dto.js","sourceRoot":"","sources":["../../../src/city/dtos/returnCity.dto.ts"],"names":[],"mappings":";;;AAAA,sEAAgE;AAGhE,MAAa,aAAa;IAIxB,YAAY,IAAgB;QAC1B,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC,IAAI,CAAC;QACtB,IAAI,CAAC,KAAK,GAAG,IAAI,CAAC,KAAK,CAAC,CAAC,CAAC,IAAI,gCAAc,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,SAAS,CAAC;IACvE,CAAC;CACF;AARD,sCAQC"}
