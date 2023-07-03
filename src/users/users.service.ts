@@ -26,12 +26,12 @@ export class UsersService {
     }
 
     const saltOrRounds = 10;
-    const passwoedhash = await hash(createUserDto.password, saltOrRounds);
+    const passwordHash = await hash(createUserDto.password, saltOrRounds);
 
     return this.userRepository.save({
       ...createUserDto,
       typeUser: 1,
-      password: passwoedhash,
+      password: passwordHash,
     });
   }
 

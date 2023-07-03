@@ -7,7 +7,7 @@ export const UserEntityMock: UserEntity = {
   email: 'teste@unitario.com',
   id: 1234,
   name: 'Testenelson Unitario',
-  password: 'senhaunitario',
+  password: '$2b$10$gIcoMZ/y2luKXaXJBKP69OYBBlhAcmMSW3ZuYI8t1It4QVG27f2VC', // 123senha4
   phone: '46999009999',
   typeUser: UserType.User,
   updatedAt: new Date(),
